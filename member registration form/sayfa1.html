@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Member Registration Form</title>
+	<link rel="stylesheet" href="sayfa1.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="form-box">
+			<form action="sayfa2.html" method="post" id="register" >
+				<h2>Sign Up</h2>
+				<div class="input-box">
+					<i class='bx bx-user' ></i>
+					<input type="text" id="name" name="name" placeholder="Enter Your Name" >
+				</div>
+				<div class="input-box">
+					<i class='bx bx-user' ></i>
+					<input type="text" id="surname" name="surname" placeholder="Enter Your Surname" >
+				</div>
+				<div class="input-box">
+					<i class='bx bx-phone' ></i>
+					<input type="number" id="nmb" name="nmb" placeholder="Enter Your Phone Number">
+				</div>
+				<div class="input-box">
+					<i class='bx bx-envelope'></i>
+					<input type="email" id="email" name="email" placeholder="Enter Your Email" >
+				</div>
+				<div class="input-box">
+					<i class='bx bx-lock-alt' ></i>
+					<input type="password" id="password" name="password" placeholder="Enter Your Password">
+				</div>
+				<div class="input-box">
+					<i class='bx bx-lock-alt' ></i>
+					<input type="password" id="cpassword" name="cpassword" placeholder="Confirm Your Password" >
+				</div>
+				<button class="submit">Register</button>
+			</form>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src="sayfa1.js"></script>
+</body>
+</html>
